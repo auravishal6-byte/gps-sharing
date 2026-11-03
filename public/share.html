@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Share My Location</title>
+<style>
+body {
+  background: #101827;
+  color: white;
+  font-family: Arial;
+  display: grid;
+  place-items: center;
+  min-height: 90vh;
+  margin: 0;
+}
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 350px;
+  text-align: center;
+}
+button {
+  background: #16a34a;
+  color: white;
+  border: 0;
+  padding: 15px;
+  border-radius: 9px;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>📍 Share Your Location</h2>
+<p>Your location will only be shared after you choose to allow GPS permission.</p>
+<button id="share">Allow & Share Location</button>
+<p id="status" aria-live="polite"></p>
+</div>
+<script src="/share.js" defer></script>
+</body>
+</html>

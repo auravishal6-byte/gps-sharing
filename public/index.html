@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GPS Sharing Dashboard</title>
+<style>
+body {
+  background: #101827;
+  color: white;
+  font-family: Arial;
+  padding: 20px;
+}
+.card {
+  max-width: 450px;
+  margin: 30px auto;
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+}
+input, button {
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+button {
+  background: #16a34a;
+  color: white;
+  border: none;
+}
+a {
+  color: #38bdf8;
+  overflow-wrap: anywhere;
+}
+#status {
+  white-space: pre-wrap;
+}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>GPS Sharing Dashboard</h2>
+
+<label>Admin Key</label>
+<input id="key" type="password" placeholder="Enter Admin Key">
+
+<button id="create">Create Sharing Link</button>
+
+<div id="result"></div>
+
+<hr>
+
+<label>Sharing Token</label>
+<input id="token" placeholder="Paste sharing token">
+
+<button id="check">Check Shared Location</button>
+
+<div id="location"></div>
+<p id="status"></p>
+</div>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
